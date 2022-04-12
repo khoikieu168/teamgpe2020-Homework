@@ -1,0 +1,65 @@
+Error lists:
+
+-cc000 :  Wrong format for ID
+(signal 50000)
+
+-cc001 :  CityID already exist/ not unique
+(signal 50001)
+
+-cc002 :  CenterID already exist/ not unique in 1 city  
+(signal 50002)
+
+-cc003 :  The city not exist
+(signal 50003)
+
+-cc004 :  CourtID already exist/ not unique in 1 city, 1 center
+(signal 50004)
+
+-cc005 :  The center not exist
+(signal 50005)
+
+-cc006 :  PlayerID already exist/ not unique
+(signal 50006)
+
+-cc007 :  StaffID already exist/ not unique in 1 city, 1 center
+(signal 50007)
+
+-cc008 :  Wrong format for timestamp/ date/ time
+(signal 50008)
+
+-cc009 :  CourtID not exist
+(signal 50009)
+
+-cc010 :  PlayerID not exist
+(signal 50010)
+
+-cc011 :  Time error
+	   - BookingDate < timestamp
+	   - startTime < openTime (07:00:00)
+	   - endTime > closeTime	
+	   - startTime > EndTime
+	   - startTime > Time of timestamp when the BookingDate = Date of timestamp
+(signal 50011)
+
+-cc012 :  BookingID not exist
+(signal 50012)
+
+-cc013 :  Wrong format for status
+(signal 50013)
+
+-cc014 :  StaffID not exist
+(signal 50014)
+
+-cc015 :  BookID not belong to playerID
+(signal 50015)
+
+-cc016 :  StaffID not belong to centerID
+(signal 50016)
+
+-cc017 :  Mismatch information
+(signal 50017)
+
+-cc018 :  Fail booking conditions
+(signal 50018)
+
+
